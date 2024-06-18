@@ -4,6 +4,8 @@ Documentation generator for local packages. Alternative to tools like Sphinx, Mk
 
 ### Installation
 
+*Note: not yet ready to install!*
+
 ```bash
 pip install pkg_docs
 ```
@@ -62,6 +64,7 @@ Generating the documentation for this section returns the following dictionary, 
 
 This dictionary can be easily traversed to populate a Jinja Template. Ideally, the structure of the `context` dictionary provides a similar structure as the templates, almost acting as a table of contents within Python.
 
+
 ### Upcoming
 
 Currently, there is no support for nested functions; only top-level functions within a module.
@@ -69,6 +72,12 @@ Currently, there is no support for nested functions; only top-level functions wi
 Think of an idea? Feel free to suggest it in the `Issues` tab or create a `Pull Request`.
 
 
-### Author
+### Information
 
-Lucas Nelson. Developed June 17, 2024. Motivated by manual documentation procedures at workplace.
+**Author**: Lucas Nelson
+
+**Developed**: June 17, 2024
+
+**Last Updated**: June 17, 2024
+
+**Motivation**: Manual documentation procedures at workplace
