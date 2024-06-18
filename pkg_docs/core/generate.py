@@ -27,16 +27,14 @@ def generate_documentation(
     output_filepath.mkdir(parents=True, exist_ok=True)
 
     template_document = jinja_env.get_template(template_filepath)
-    
+
     for section_name, functions_context in package_context.items():
         context = {
             KEYWORD_SECTION_NAME: section_name,
             KEYWORD_FUNCTIONS_CONTEXT: functions_context,
         }
         section_name = f"{section_name.replace(' ', '_')}"
-        with open(
-            output_filepath.joinpath(f"{section_name}.md"), "w"
-        ) as fp:
+        with open(output_filepath.joinpath(f"{section_name}.md"), "w") as fp:
             fp.write(template_document.render(context))
 
 
